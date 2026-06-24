@@ -11,17 +11,17 @@
   <img alt="Benchmarks" src="https://img.shields.io/badge/Benchmarks-4-lightgrey">
 </p>
 
-Official repository for **DSRTrack: Disturbance-Aware State Recovery and Volatility Regulation for RGB-T Tracking**.
+📌 Official repository for **DSRTrack: Disturbance-Aware State Recovery and Volatility Regulation for RGB-T Tracking**.
 
-The source code and pretrained models will be released upon paper acceptance. This repository currently provides tracking results and evaluation curves for reproducibility.
+🔓 The source code and pretrained models will be released upon paper acceptance. This repository currently provides tracking results and evaluation curves for reproducibility.
 
-## Highlights
+## ✨ Highlights
 
 - Disturbance-aware state recovery for degraded online states.
 - Volatility regulation to reduce the persistent influence of unreliable historical states.
 - Evaluation results on four public RGB-T tracking benchmarks.
 
-## Performance
+## 📊 Performance
 
 | Dataset | PR | NPR | SR |
 |---|---:|---:|---:|
@@ -30,7 +30,7 @@ The source code and pretrained models will be released upon paper acceptance. Th
 | RGBT210 | 92.5 | - | 68.2 |
 | RGBT234 | 93.0 | - | 70.3 |
 
-## Evaluation Curves
+## 📈 Evaluation Curves
 
 ### LasHeR
 
@@ -40,7 +40,7 @@ The source code and pretrained models will be released upon paper acceptance. Th
 
 ![RGBT234 evaluation curves](assets/RGBT234_curve.png)
 
-## Tracking Results
+## 📁 Tracking Results
 
 Tracking results are provided on four public RGB-T tracking benchmarks:
 
@@ -52,10 +52,10 @@ Tracking results are provided on four public RGB-T tracking benchmarks:
 └── RGBT234/
 ```
 
-## Code
+## 🚀 Code
 
 The source code and pretrained models will be released upon paper acceptance.
 
-## Citation
+## 📝 Citation
 
 Citation information will be updated after publication.
