@@ -1,12 +1,9 @@
 # DSRTrack
 
-Official repository for **DSRTrack: Disturbance-Aware State Recovery and Volatility Regulation for RGB-T Tracking**.
+Official repository for **DSRTrack**.
 
 The source code and pretrained models will be released upon paper acceptance. This repository currently provides tracking results and evaluation materials for reproducibility.
 
-## Overview
-
-DSRTrack addresses online-state degradation in RGB-T tracking through disturbance-aware state recovery and volatility regulation.
 
 ## Tracking Results
 
