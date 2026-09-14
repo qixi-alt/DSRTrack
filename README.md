@@ -1,4 +1,4 @@
-<img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/3988e080-55d9-47a0-bdcd-4129e07845cc" /># DSRTrack
+# DSRTrack
 
 <p align="center">
   <img alt="Task" src="https://img.shields.io/badge/Task-RGB--T%20Tracking-blue">
