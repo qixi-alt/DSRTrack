@@ -3,13 +3,13 @@
 <p align="center">
   <img alt="Task" src="https://img.shields.io/badge/Task-RGB--T%20Tracking-blue">
   <img alt="Results" src="https://img.shields.io/badge/Results-Available-brightgreen">
-  <img alt="Code" src="https://img.shields.io/badge/Code-Coming%20Soon-orange">
-  <img alt="Benchmarks" src="https://img.shields.io/badge/Benchmarks-4-lightgrey">
+  <img alt="Code" src="https://img.shields.io/badge/Code-Available-brightgreen">
+  <img alt="Benchmarks" src="https://img.shields.io/badge/Benchmarks-5-lightgrey">
 </p>
 
 📌 Official repository for **DSRTrack**.
 
-🔓 The source code and pretrained models will be released upon paper acceptance. This repository currently provides tracking results and evaluation curves for reproducibility.
+🔓 Source code, pretrained models, tracking results, and evaluation curves are available for reproducibility.
 
 ## ✨ Highlights
 
@@ -55,9 +55,30 @@ Tracking results are provided on five public RGB-T tracking benchmarks:
 └── VTUAV-ST/
 ```
 
-## 🚀 Code
+## 🧠 Pretrained Models
 
-The source code and pretrained models will be released upon paper acceptance.
+| Training dataset | Evaluation datasets | Checkpoint | SHA-256 |
+|---|---|---|---|
+| LasHeR | LasHeR, GTOT, RGBT210, RGBT234 | [Google Drive](https://drive.google.com/file/d/1YJRirN8lHCtrmMeOiHdXraXAJOR-LLEI/view?usp=sharing) | `03f0d3a9f8ae1ee6c4afdc3a7d72aa17cb6bd4429fad5950c43b92942a0c1e71` |
+| VTUAV-ST | VTUAV-ST | [Google Drive](https://drive.google.com/file/d/1TAr0trPZVc9IEbpE_-_ZRYU93_jcffJE/view?usp=sharing) | `bc1ef30ae58969bcb33feb584ccb2dc82ff6835a91af20ec095af11f5cd553d6` |
+
+Download the checkpoint corresponding to the target benchmark. The LasHeR-trained checkpoint is used for LasHeR, GTOT, RGBT210, and RGBT234, while the VTUAV-ST checkpoint is used for VTUAV-ST.
+
+## 🚀 Evaluation
+
+Evaluate DSRTrack on LasHeR, GTOT, RGBT210, and RGBT234:
+
+```bash
+bash sh/test.sh /path/to/DSRTrack-LasHeR.bin ./outputs/rgbt 0
+```
+
+Evaluate DSRTrack on VTUAV-ST:
+
+```bash
+bash sh/test_vtuav_st.sh /path/to/DSRTrack-VTUAV-ST.bin ./outputs/vtuav_st 0
+```
+
+The last argument specifies the visible GPU IDs. For example, use `0` for a single GPU or `0,1` for two GPUs.
 
 ## 📝 Citation
 
