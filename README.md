@@ -44,23 +44,22 @@
 
 ## 📁 Tracking Results
 
-Tracking results are provided on five public RGB-T tracking benchmarks:
+The raw tracking results are included directly in this repository for reproducibility:
 
-```text
-.
-├── LasHeR/
-├── GTOT/
-├── RGBT210/
-├── RGBT234/
-└── VTUAV-ST/
-```
+| Dataset | Tracking results |
+|---|---|
+| LasHeR | [View results](./LasHeR/) |
+| GTOT | [View results](./GTOT/) |
+| RGBT210 | [View results](./RGBT210/) |
+| RGBT234 | [View results](./RGBT234/) |
+| VTUAV-ST | [View results](./VTUAV-ST/) |
 
 ## 🧠 Pretrained Models
 
-| Training dataset | Evaluation datasets | Checkpoint | SHA-256 |
-|---|---|---|---|
-| LasHeR | LasHeR, GTOT, RGBT210, RGBT234 | [Google Drive](https://drive.google.com/file/d/1YJRirN8lHCtrmMeOiHdXraXAJOR-LLEI/view?usp=sharing) | `03f0d3a9f8ae1ee6c4afdc3a7d72aa17cb6bd4429fad5950c43b92942a0c1e71` |
-| VTUAV-ST | VTUAV-ST | [Google Drive](https://drive.google.com/file/d/1TAr0trPZVc9IEbpE_-_ZRYU93_jcffJE/view?usp=sharing) | `bc1ef30ae58969bcb33feb584ccb2dc82ff6835a91af20ec095af11f5cd553d6` |
+| Training dataset | Evaluation datasets | Checkpoint |
+|---|---|---|
+| LasHeR | LasHeR, GTOT, RGBT210, RGBT234 | [Google Drive](https://drive.google.com/file/d/1YJRirN8lHCtrmMeOiHdXraXAJOR-LLEI/view?usp=sharing) |
+| VTUAV-ST | VTUAV-ST | [Google Drive](https://drive.google.com/file/d/1TAr0trPZVc9IEbpE_-_ZRYU93_jcffJE/view?usp=sharing) |
 
 Download the checkpoint corresponding to the target benchmark. The LasHeR-trained checkpoint is used for LasHeR, GTOT, RGBT210, and RGBT234, while the VTUAV-ST checkpoint is used for VTUAV-ST.
 
