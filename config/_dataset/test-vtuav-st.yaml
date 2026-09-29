@@ -1,0 +1,13 @@
+# Keep every full-rate test frame. Only bbox-format normalization is applied;
+# sparse unannotated frames must not be removed before tracking.
+filters:
+  - type: "data_cleaning.annotation_standard"
+    parameters:
+      bounding_box_format: "XYXY"
+      bounding_box_coordinate_system: "Continuous"
+
+datasets:
+  - name: "VTUAV_ST"
+    type: "MMOT"
+    splits:
+      - "test"

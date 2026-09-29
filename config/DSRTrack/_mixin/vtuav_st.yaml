@@ -1,0 +1,39 @@
+# Switch DSRTrack from LasHeR to the official VTUAV short-term train/test split.
+# VTUAV-ST evaluation overrides for DSRTrack.
+# are intentionally left unchanged.
+
+- path: "run.data.train.source.parameters"
+  value: !include "../../_dataset/train-vtuav-st.yaml"
+
+- path: "run.data.train.sampler.weight"
+  value:
+    - match:
+        type: "dataset"
+        name: "VTUAV_ST"
+      value: 1.0
+
+- path: "run.data.eval.source.parameters"
+  value: !include "../../_dataset/test-vtuav-st.yaml"
+
+- path: "run.data.eval.sampler.shuffle"
+  value: false
+
+- path: "run.data.eval.sampler.repeat_times"
+  value:
+    - match:
+        type: "dataset"
+        name_regex: ".*"
+      value: 1
+
+- path: "run.data.eval.result_collector"
+  value:
+    async_worker: true
+    log_summary: false
+    dispatch:
+      - match:
+          name: "VTUAV_ST"
+          split: "test"
+        handlers:
+          - type: "external/VTUAV_ST"
+            file_name: "VTUAV-ST-results"
+            bbox_rasterize: false
