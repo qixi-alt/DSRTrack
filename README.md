@@ -78,7 +78,3 @@ bash sh/test_vtuav_st.sh /path/to/DSRTrack-VTUAV-ST.bin ./outputs/vtuav_st 0
 ```
 
 The last argument specifies the visible GPU IDs. For example, use `0` for a single GPU or `0,1` for two GPUs.
-
-## 📝 Citation
-
-Citation information will be updated after publication.
